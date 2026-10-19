@@ -1,0 +1,17 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--card-grid-columns), minmax(0, 1fr));
+  gap: var(--card-grid-gap);
+}
+
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(var(--card-grid-tablet-columns), minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .card-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

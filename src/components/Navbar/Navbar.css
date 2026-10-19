@@ -61,20 +61,6 @@
 
 .navbar__register {
   justify-self: end;
-  padding: 12px 20px;
-  border-radius: 8px;
-  background-color: #147d59;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: background-color 150ms ease;
-}
-
-.navbar__register:hover {
-  background-color: #106446;
 }
 
 .navbar a:focus-visible {
@@ -109,7 +95,4 @@
     gap: 0 16px;
   }
 
-  .navbar__register {
-    padding: 10px 16px;
-  }
 }

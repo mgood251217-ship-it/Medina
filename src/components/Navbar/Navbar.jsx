@@ -1,5 +1,6 @@
 import { useLayoutEffect, useRef } from 'react'
 import { Link, NavLink } from 'react-router'
+import Button from '../Button/Button.jsx'
 import './Navbar.css'
 
 const menuItems = [
@@ -55,9 +56,9 @@ export default function Navbar() {
             </ul>
           </nav>
 
-          <Link to="/ppdb" className="navbar__register">
+          <Button to="/ppdb" variant="primary" className="navbar__register">
             Daftar Sekarang
-          </Link>
+          </Button>
         </div>
       </header>
       <div className="navbar__spacer" ref={spacerRef} aria-hidden="true" />

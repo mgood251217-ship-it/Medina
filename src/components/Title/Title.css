@@ -1,0 +1,11 @@
+.title {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.title__subtitle {
+  margin: 8px 0 0;
+  font-weight: 400;
+  line-height: 1.6;
+}

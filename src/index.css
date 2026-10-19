@@ -1,7 +1,8 @@
 :root {
   font-family: Arial, sans-serif;
-  color: #111;
-  background: #fff;
+  font-size: var(--font-size-md);
+  color: var(--text);
+  background: var(--background);
 }
 
 body {

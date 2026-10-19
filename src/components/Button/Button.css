@@ -7,7 +7,7 @@
   border: 1px solid transparent;
   border-radius: 8px;
   font-family: inherit;
-  font-size: 14px;
+  font-size: var(--font-size-sm);
   font-weight: 600;
   line-height: 1.5;
   text-decoration: none;
@@ -17,35 +17,49 @@
 }
 
 .button--primary {
-  background-color: #147d59;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--on-primary);
 }
 
 .button--primary:hover {
-  background-color: #106446;
+  background-color: var(--primary-hover);
+}
+
+.button--primary:active {
+  background-color: var(--primary-active);
 }
 
 .button--secondary {
-  background-color: #e6f4ed;
-  color: #106446;
+  background-color: var(--secondary);
+  color: var(--on-secondary);
 }
 
 .button--secondary:hover {
-  background-color: #cfe9dc;
+  background-color: var(--secondary-hover);
+}
+
+.button--secondary:active {
+  background-color: var(--secondary-active);
 }
 
 .button--outline {
-  border-color: #147d59;
+  border-color: var(--primary);
   background-color: transparent;
-  color: #147d59;
+  color: var(--primary);
 }
 
 .button--outline:hover {
-  background-color: #e6f4ed;
+  border-color: var(--primary-hover);
+  background-color: var(--secondary);
+}
+
+.button--outline:active {
+  border-color: var(--primary-active);
+  background-color: var(--secondary-active);
 }
 
 .button:focus-visible {
-  outline: 2px solid #147d59;
+  outline: 2px solid var(--focus-ring);
   outline-offset: 4px;
 }
 

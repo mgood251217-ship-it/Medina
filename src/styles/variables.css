@@ -1,0 +1,75 @@
+:root {
+  --primary: #147d59;
+  --primary-hover: #106446;
+  --primary-active: #0c4f38;
+  --on-primary: #fff;
+
+  --secondary: #e6f4ed;
+  --secondary-hover: #cfe9dc;
+  --secondary-active: #b5ddc8;
+  --on-secondary: #106446;
+
+  --danger: #b91c1c;
+  --danger-hover: #991b1b;
+  --danger-active: #7f1d1d;
+  --on-danger: #fff;
+
+  --info: #1d4ed8;
+  --info-hover: #1e40af;
+  --info-active: #1e3a8a;
+  --on-info: #fff;
+
+  --success: #15803d;
+  --success-hover: #166534;
+  --success-active: #14532d;
+  --on-success: #fff;
+
+  --warning: #facc15;
+  --warning-hover: #eab308;
+  --warning-active: #ca8a04;
+  --on-warning: #422006;
+
+  --purple: #7c3aed;
+  --purple-hover: #6d28d9;
+  --purple-active: #5b21b6;
+  --on-purple: #fff;
+
+  --orange: #c2410c;
+  --orange-hover: #9a3412;
+  --orange-active: #7c2d12;
+  --on-orange: #fff;
+
+  --pink: #be185d;
+  --pink-hover: #9d174d;
+  --pink-active: #831843;
+  --on-pink: #fff;
+
+  --cyan: #0e7490;
+  --cyan-hover: #155e75;
+  --cyan-active: #164e63;
+  --on-cyan: #fff;
+
+  --background: #fff;
+  --background-hover: #f9fafb;
+  --background-active: #f3f4f6;
+  --content: #fff;
+  --content-hover: #f9fafb;
+  --content-active: #f3f4f6;
+
+  --text: #111;
+  --text-hover: #374151;
+  --text-active: #030712;
+  --text-secondary: #374151;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --border-radius: 8px;
+  --border-hover: #d1d5db;
+  --border-active: #9ca3af;
+  --focus-ring: var(--primary);
+
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+}

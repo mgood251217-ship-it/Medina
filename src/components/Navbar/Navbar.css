@@ -3,8 +3,8 @@
   top: 0;
   inset-inline: 0;
   z-index: 1000;
-  background-color: #fff;
-  border-bottom: 1px solid #e5e7eb;
+  background-color: var(--content);
+  border-bottom: 1px solid var(--border);
 }
 
 .navbar__spacer {
@@ -45,8 +45,8 @@
 .navbar__link {
   display: inline-block;
   padding-block: 12px;
-  color: #374151;
-  font-size: 14px;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
   font-weight: 600;
   line-height: 1.5;
   text-decoration: none;
@@ -54,9 +54,13 @@
   transition: color 150ms ease;
 }
 
-.navbar__link:hover,
+.navbar__link:hover {
+  color: var(--primary-hover);
+}
+
+.navbar__link:active,
 .navbar__link[aria-current='page'] {
-  color: #147d59;
+  color: var(--primary-active);
 }
 
 .navbar__register {
@@ -64,7 +68,7 @@
 }
 
 .navbar a:focus-visible {
-  outline: 2px solid #147d59;
+  outline: 2px solid var(--focus-ring);
   outline-offset: 4px;
 }
 
@@ -94,5 +98,4 @@
   .navbar__menu {
     gap: 0 16px;
   }
-
 }

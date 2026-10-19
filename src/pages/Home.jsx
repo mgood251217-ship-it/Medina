@@ -1,3 +1,5 @@
+import QuickLinks from '../components/QuickLinks/QuickLinks.jsx'
+
 export default function Home() {
-  return <h1>Home</h1>
+  return <QuickLinks />
 }

@@ -1,0 +1,95 @@
+.quick-links {
+  padding: 16px 24px 28px;
+  border-radius: var(--border-radius);
+  background-color: color-mix(in srgb, var(--info) 6%, var(--background));
+}
+
+.quick-links__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px 48px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.quick-link-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 100px;
+  border-radius: 12px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.quick-link-card__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 90px;
+  border-radius: 12px;
+  background-color: var(--content);
+  box-shadow: 0 12px 24px rgb(0 0 0 / 0.04);
+  transition: transform 150ms ease, background-color 150ms ease;
+}
+
+.quick-link-card__image--book {
+  color: var(--primary-active);
+}
+
+.quick-link-card__image--gallery {
+  color: var(--info);
+}
+
+.quick-link-card__image--activities {
+  color: var(--pink);
+}
+
+.quick-link-card__image--register {
+  color: var(--cyan);
+}
+
+.quick-link-card__label {
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.quick-link-card:hover .quick-link-card__image {
+  background-color: var(--content-hover);
+  transform: translateY(-3px);
+}
+
+.quick-link-card:active .quick-link-card__image {
+  background-color: var(--content-active);
+  transform: translateY(0);
+}
+
+.quick-link-card:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 6px;
+}
+
+@media (max-width: 640px) {
+  .quick-links {
+    padding-inline: 16px;
+  }
+
+  .quick-links__list {
+    gap: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quick-link-card__image {
+    transition: none;
+  }
+
+  .quick-link-card:hover .quick-link-card__image {
+    transform: none;
+  }
+}

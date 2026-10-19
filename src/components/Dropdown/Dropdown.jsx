@@ -1,5 +1,6 @@
 import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router'
+import Icon from '../Icon/Icon.jsx'
 import './Dropdown.css'
 
 export default function Dropdown({ to, label, items }) {
@@ -73,7 +74,7 @@ export default function Dropdown({ to, label, items }) {
           aria-controls={menuId}
           onClick={() => setIsOpen((open) => !open)}
         >
-          <span className="dropdown__arrow" aria-hidden="true" />
+          <Icon name="chevronDown" size={12} className="dropdown__arrow" />
         </button>
       </div>
 

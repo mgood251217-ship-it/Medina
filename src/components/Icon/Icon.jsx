@@ -1,6 +1,16 @@
 import './Icon.css'
 
 const icons = {
+  loader: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2,
+    content: (
+      <>
+        <circle cx="12" cy="12" r="9" opacity="0.2" />
+        <path d="M12 3a9 9 0 0 1 9 9" />
+      </>
+    ),
+  },
   book: {
     viewBox: '0 0 64 64',
     strokeWidth: 2.5,

@@ -1,5 +1,6 @@
 import { Link } from 'react-router'
 import Title from '../Title/Title.jsx'
+import Image from '../Image/Image.jsx'
 import './Card.css'
 
 export default function Card({
@@ -12,6 +13,9 @@ export default function Card({
   imageHeight = 200,
   imageFit = 'cover',
   imageBackground = 'var(--background-active)',
+  placeholderIcon = 'gallery',
+  placeholderColor = 'var(--text-muted)',
+  placeholderSize = 64,
   media,
   children,
   to,
@@ -32,14 +36,16 @@ export default function Card({
         className="card__media"
         style={{ height: imageHeight, backgroundColor: imageBackground }}
       >
-        {image ? (
-          <img
+        {image || media == null ? (
+          <Image
             className="card__image"
             src={image}
             alt={imageAlt}
-            loading="lazy"
-            decoding="async"
-            style={{ objectFit: imageFit }}
+            fit={imageFit}
+            fallbackIcon={placeholderIcon}
+            fallbackColor={placeholderColor}
+            fallbackSize={placeholderSize}
+            fallbackBackground="transparent"
           />
         ) : (
           media

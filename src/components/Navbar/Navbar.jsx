@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from 'react'
 import { Link, NavLink } from 'react-router'
 import Button from '../Button/Button.jsx'
 import Dropdown from '../Dropdown/Dropdown.jsx'
+import Image from '../Image/Image.jsx'
 import { menuItems } from '../../data/navigation.js'
 import './Navbar.css'
 
@@ -29,12 +30,14 @@ export default function Navbar() {
       <header className="navbar" ref={navbarRef}>
         <div className="navbar__container">
           <Link to="/" className="navbar__brand" aria-label="Medina - Beranda">
-            <img
+            <Image
               src={`${import.meta.env.BASE_URL}favicon.svg`}
               alt="Logo Medina"
               className="navbar__logo"
-              width="48"
-              height="48"
+              width={48}
+              height={48}
+              fit="contain"
+              loading="eager"
             />
           </Link>
 

@@ -1,15 +1,9 @@
 import { useLayoutEffect, useRef } from 'react'
 import { Link, NavLink } from 'react-router'
 import Button from '../Button/Button.jsx'
+import Dropdown from '../Dropdown/Dropdown.jsx'
+import { menuItems } from '../../data/navigation.js'
 import './Navbar.css'
-
-const menuItems = [
-  { to: '/', label: 'Beranda' },
-  { to: '/about-us', label: 'Tentang Kami' },
-  { to: '/daily-activities', label: 'Kegiatan Harian' },
-  { to: '/gallery', label: 'Galeri' },
-  { to: '/ppdb', label: 'PPDB' },
-]
 
 export default function Navbar() {
   const navbarRef = useRef(null)
@@ -46,13 +40,17 @@ export default function Navbar() {
 
           <nav className="navbar__navigation" aria-label="Navigasi utama">
             <ul className="navbar__menu">
-              {menuItems.map(({ to, label }) => (
-                <li key={to}>
-                  <NavLink to={to} end={to === '/'} className="navbar__link">
-                    {label}
-                  </NavLink>
-                </li>
-              ))}
+              {menuItems.map(({ to, label, children }) =>
+                children ? (
+                  <Dropdown key={to} to={to} label={label} items={children} />
+                ) : (
+                  <li key={to}>
+                    <NavLink to={to} end={to === '/'} className="navbar__link">
+                      {label}
+                    </NavLink>
+                  </li>
+                ),
+              )}
             </ul>
           </nav>
 

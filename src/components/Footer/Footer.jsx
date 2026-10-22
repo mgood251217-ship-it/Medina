@@ -24,7 +24,7 @@ function FooterLink({ href, label, download, children, className = '' }) {
 
 export default function Footer({
   brand = 'Medina Insan Qurani',
-  logo = `${import.meta.env.BASE_URL}favicon.svg`,
+  logo = `${import.meta.env.BASE_URL}img/logo.png`,
   contact = footerContact,
   resources = footerResources,
   socialLinks = footerSocialLinks,

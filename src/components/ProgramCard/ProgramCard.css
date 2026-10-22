@@ -18,6 +18,10 @@
   padding-bottom: 80px;
 }
 
+.program-card__image .image__element {
+  object-position: center bottom;
+}
+
 .program-card__label {
   position: absolute;
   right: 20px;

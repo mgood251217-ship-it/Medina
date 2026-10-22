@@ -8,6 +8,7 @@ export default function ProgramCard({
   subtitle,
   image,
   imageAlt = title ?? '',
+  imageFit = 'contain',
   background = 'var(--info)',
   labelBackground = 'var(--purple)',
   color = 'var(--on-primary)',
@@ -30,6 +31,7 @@ export default function ProgramCard({
         fallbackSize={72}
         fallbackColor={color}
         fallbackBackground="transparent"
+        fit={imageFit}
         {...imageProps}
         src={image}
         alt={imageAlt}

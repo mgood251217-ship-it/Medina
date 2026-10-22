@@ -1,6 +1,8 @@
 export const programs = [
   {
     id: 'beasiswa',
+    image: `${import.meta.env.BASE_URL}img/santri_1.png`,
+    imageAlt: 'Santri memegang Al-Quran untuk program Beasiswa Takhassus',
     title: 'BEASISWA',
     subtitle: 'Program Takhassus',
     background: 'var(--info)',
@@ -9,6 +11,8 @@ export const programs = [
   },
   {
     id: 'smp-plus',
+    image: `${import.meta.env.BASE_URL}img/santri_2.png`,
+    imageAlt: 'Santri memegang bola untuk program SMP Plus',
     title: 'SMP Plus',
     subtitle: 'Program 3 Tahun',
     background: 'var(--warning)',
@@ -17,6 +21,8 @@ export const programs = [
   },
   {
     id: 'sma-takhassus',
+    image: `${import.meta.env.BASE_URL}img/santri_3.png`,
+    imageAlt: 'Santri memberi salam untuk program SMA Takhassus',
     title: 'SMA Takhassus',
     subtitle: 'Program SMA',
     background: 'var(--success)',

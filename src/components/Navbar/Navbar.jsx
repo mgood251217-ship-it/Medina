@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="navbar__container">
           <Link to="/" className="navbar__brand" aria-label="Medina - Beranda">
             <Image
-              src={`${import.meta.env.BASE_URL}favicon.svg`}
+              src={`${import.meta.env.BASE_URL}img/logo.png`}
               alt="Logo Medina"
               className="navbar__logo"
               width={48}

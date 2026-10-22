@@ -67,6 +67,11 @@
   --border-active: #9ca3af;
   --focus-ring: var(--primary);
 
+  --footer-background: #1b1168;
+  --footer-bottom-background: #03294d;
+  --footer-text: #fff;
+  --footer-accent: #ff8a00;
+
   --font-size-sm: 14px;
   --font-size-md: 16px;
   --font-size-lg: 18px;

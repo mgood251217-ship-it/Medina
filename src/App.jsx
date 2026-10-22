@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router'
 import Navbar from './components/Navbar/Navbar.jsx'
+import Footer from './components/Footer/Footer.jsx'
 import Home from './pages/Home.jsx'
 import AboutUs from './pages/AboutUs.jsx'
 import DailyActivities from './pages/DailyActivities.jsx'
@@ -30,6 +31,7 @@ function App() {
           )}
         </Routes>
       </main>
+      <Footer />
     </>
   )
 }

@@ -1,6 +1,97 @@
 import './Icon.css'
 
 const icons = {
+  mapPin: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2,
+    content: (
+      <>
+        <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" />
+        <circle cx="12" cy="10" r="3" />
+      </>
+    ),
+  },
+  mail: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2,
+    content: (
+      <>
+        <rect x="2" y="4" width="20" height="16" rx="2" />
+        <path d="m2 6 10 7L22 6" />
+      </>
+    ),
+  },
+  fileText: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2,
+    content: (
+      <>
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+        <path d="M14 2v6h6M8 12h8M8 16h8" />
+      </>
+    ),
+  },
+  cloudDownload: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2,
+    content: (
+      <>
+        <path d="M6 17a5 5 0 0 1-.7-9.9A7 7 0 0 1 19 8a4.5 4.5 0 0 1 0 9" />
+        <path d="M12 11v11m-4-4 4 4 4-4" />
+      </>
+    ),
+  },
+  download: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2,
+    content: <path d="M12 3v12m-5-5 5 5 5-5M3 15v5a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-5" />,
+  },
+  facebook: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2,
+    content: <path d="M18 2h-3a5 5 0 0 0-5 5v3H6v4h4v8h4v-8h4l1-4h-5V7a1 1 0 0 1 1-1h3Z" />,
+  },
+  instagram: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2,
+    content: (
+      <>
+        <rect x="2" y="2" width="20" height="20" rx="6" />
+        <circle cx="12" cy="12" r="4" />
+        <circle cx="18" cy="6" r="1" fill="currentColor" stroke="none" />
+      </>
+    ),
+  },
+  tiktok: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2,
+    content: <path d="M14 3h3c0 3 2 5 5 5v3a9 9 0 0 1-5-2v8a5 5 0 1 1-5-5v3a2 2 0 1 0 2 2Z" />,
+  },
+  x: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 1.8,
+    content: <path d="M4 3h4l12 18h-4ZM20 3l-7 8M4 21l7-8" />,
+  },
+  youtube: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2,
+    content: (
+      <>
+        <rect x="2" y="5" width="20" height="14" rx="4" />
+        <path d="m10 9 6 3-6 3Z" />
+      </>
+    ),
+  },
+  whatsapp: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2,
+    content: (
+      <>
+        <path d="m3 21 1.5-5A9 9 0 1 1 8 20Z" />
+        <path d="M8 7c-2 2 3 9 6 9l2-2-3-2-1 1c-1-1-2-2-2-3l1-1Z" />
+      </>
+    ),
+  },
   loader: {
     viewBox: '0 0 24 24',
     strokeWidth: 2,

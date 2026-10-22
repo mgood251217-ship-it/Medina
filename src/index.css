@@ -22,3 +22,9 @@ body {
   margin-inline: auto;
   padding: 24px;
 }
+
+.page-content--home {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}

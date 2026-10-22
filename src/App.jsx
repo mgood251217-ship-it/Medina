@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router'
+import { Route, Routes, useLocation } from 'react-router'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import Home from './pages/Home.jsx'
@@ -10,10 +10,12 @@ import SubmenuPage from './pages/SubmenuPage.jsx'
 import { menuItems } from './data/navigation.js'
 
 function App() {
+  const { pathname } = useLocation()
+
   return (
     <>
       <Navbar />
-      <main className="page-content">
+      <main className={`page-content ${pathname === '/' ? 'page-content--home' : ''}`.trim()}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />

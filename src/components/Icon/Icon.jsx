@@ -1,6 +1,26 @@
 import './Icon.css'
 
 const icons = {
+  arrowLeft: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2.5,
+    content: <path d="M20 12H4m7-7-7 7 7 7" />,
+  },
+  arrowRight: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2.5,
+    content: <path d="M4 12h16m-7-7 7 7-7 7" />,
+  },
+  play: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2,
+    content: <path d="m8 4 12 8-12 8Z" />,
+  },
+  pause: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2,
+    content: <path d="M8 4v16M16 4v16" />,
+  },
   mapPin: {
     viewBox: '0 0 24 24',
     strokeWidth: 2,

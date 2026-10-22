@@ -13,3 +13,12 @@
     margin-top: 32px;
   }
 }
+.home__content {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 24px;
+}
+
+.home__quick-links-title {
+  margin-bottom: 24px;
+}

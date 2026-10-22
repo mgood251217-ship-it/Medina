@@ -1,0 +1,37 @@
+.program-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 28px;
+  text-decoration: none;
+}
+
+.program-card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.program-card__image .image__placeholder {
+  padding-bottom: 80px;
+}
+
+.program-card__label {
+  position: absolute;
+  right: 20px;
+  bottom: 24px;
+  left: 20px;
+  padding: 12px 8px;
+  border-radius: 12px;
+}
+
+.program-card__label .title__subtitle {
+  margin-top: 4px;
+}
+
+.program-card:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: -4px;
+}

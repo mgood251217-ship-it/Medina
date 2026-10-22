@@ -9,6 +9,8 @@ import Title from '../components/Title/Title.jsx'
 import Quote from '../components/Quote/Quote.jsx'
 import SectionBackground from '../components/SectionBackground/SectionBackground.jsx'
 import VisionMission from '../components/VisionMission/VisionMission.jsx'
+import FAQ from '../components/FAQ/FAQ.jsx'
+import { faqItems } from '../data/faq.js'
 import './Home.css'
 
 export default function Home() {
@@ -65,6 +67,9 @@ export default function Home() {
         <VisionMission className="home__vision-mission" />
         <Extracurricular />
         <LatestNews className="home__news" />
+        <SectionBackground variant="waves" className="home__faq">
+          <FAQ title="FAQ" items={faqItems} />
+        </SectionBackground>
         <SectionBackground variant="dots" className="home__quote">
           <Quote
             text="Setiap guru adalah teladan, setiap ilmu adalah amanah, dan setiap anak adalah investasi akhirat."

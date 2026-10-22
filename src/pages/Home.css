@@ -2,6 +2,7 @@
 .home__history,
 .home__vision-mission,
 .home__news,
+.home__faq,
 .home__quote,
 .home__map {
   margin-top: 32px;
@@ -12,6 +13,7 @@
   .home__history,
   .home__vision-mission,
   .home__news,
+  .home__faq,
   .home__quote,
   .home__map {
     margin-top: 24px;

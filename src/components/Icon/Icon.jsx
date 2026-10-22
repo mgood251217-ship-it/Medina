@@ -1,6 +1,16 @@
 import './Icon.css'
 
 const icons = {
+  plus: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2,
+    content: <path d="M12 4v16M4 12h16" />,
+  },
+  minus: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2,
+    content: <path d="M4 12h16" />,
+  },
   check: {
     viewBox: '0 0 24 24',
     strokeWidth: 2.5,

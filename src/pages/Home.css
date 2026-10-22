@@ -1,5 +1,6 @@
 .home__about,
 .home__history,
+.home__news,
 .home__map {
   margin-top: 64px;
 }
@@ -7,6 +8,7 @@
 @media (max-width: 640px) {
   .home__about,
   .home__history,
+  .home__news,
   .home__map {
     margin-top: 32px;
   }

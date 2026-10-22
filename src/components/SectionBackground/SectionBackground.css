@@ -1,0 +1,39 @@
+.section-background {
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.section-background__decoration {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.section-background__decoration svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.section-background--edges > .section-background__decoration {
+  mask-image: linear-gradient(
+    to right,
+    #000 0%,
+    rgb(0 0 0 / 0.6) 16%,
+    transparent 38%,
+    transparent 62%,
+    rgb(0 0 0 / 0.6) 84%,
+    #000 100%
+  );
+}
+
+.section-background__content {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}

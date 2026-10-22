@@ -2,6 +2,7 @@ import { useId } from 'react'
 import CardGrid from '../CardGrid/CardGrid.jsx'
 import NewsCard from '../NewsCard/NewsCard.jsx'
 import Title from '../Title/Title.jsx'
+import SectionBackground from '../SectionBackground/SectionBackground.jsx'
 import { newsItems } from '../../data/news.js'
 import './LatestNews.css'
 
@@ -20,7 +21,9 @@ export default function LatestNews({
   const titleId = useId()
 
   return (
-    <section
+    <SectionBackground
+      as="section"
+      variant="rings"
       className={`latest-news ${className}`.trim()}
       aria-labelledby={titleId}
       style={style}
@@ -48,6 +51,6 @@ export default function LatestNews({
       ) : (
         <p className="latest-news__empty">Belum ada berita terbaru.</p>
       )}
-    </section>
+    </SectionBackground>
   )
 }

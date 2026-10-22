@@ -1,11 +1,14 @@
 .latest-news {
-  padding: 24px 24px 32px;
   border-radius: var(--border-radius);
-  background-color: color-mix(in srgb, var(--info) 6%, var(--background));
 }
 
 .latest-news__heading {
-  margin-bottom: 72px;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-inline: auto;
+  margin-bottom: 40px;
+  padding: 12px 20px;
 }
 
 .latest-news__grid {
@@ -20,10 +23,6 @@
 }
 
 @media (max-width: 640px) {
-  .latest-news {
-    padding-inline: 16px;
-  }
-
   .latest-news__heading {
     margin-bottom: 32px;
   }

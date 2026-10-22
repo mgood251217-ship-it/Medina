@@ -2,12 +2,18 @@ import Button from '../Button/Button.jsx'
 import Card from '../Card/Card.jsx'
 import CardGrid from '../CardGrid/CardGrid.jsx'
 import Title from '../Title/Title.jsx'
+import SectionBackground from '../SectionBackground/SectionBackground.jsx'
 import { extracurricularActivities } from '../../data/extracurricular.js'
 import './Extracurricular.css'
 
 export default function Extracurricular() {
   return (
-    <section className="extracurricular" aria-labelledby="extracurricular-title">
+    <SectionBackground
+      as="section"
+      variant="ribbons"
+      className="extracurricular"
+      aria-labelledby="extracurricular-title"
+    >
       <div className="extracurricular__heading">
         <Title
           id="extracurricular-title"
@@ -36,6 +42,6 @@ export default function Extracurricular() {
           Lainnya...
         </Button>
       </div>
-    </section>
+    </SectionBackground>
   )
 }

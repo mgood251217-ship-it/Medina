@@ -1,34 +1,14 @@
 .extracurricular {
-  position: relative;
-  isolation: isolate;
-  margin-top: 48px;
-  padding-block: 24px;
-}
-
-.extracurricular::before,
-.extracurricular::after {
-  position: absolute;
-  z-index: -1;
-  inset-inline: 0;
-  height: 180px;
-  border-radius: 50%;
-  background-color: color-mix(in srgb, var(--info) 6%, var(--background));
-  content: '';
-  pointer-events: none;
-}
-
-.extracurricular::before {
-  top: 80px;
-  transform: skewY(12deg);
-}
-
-.extracurricular::after {
-  bottom: 40px;
-  transform: skewY(12deg);
+  margin-top: 32px;
 }
 
 .extracurricular__heading {
-  margin-bottom: 28px;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-inline: auto;
+  margin-bottom: 32px;
+  padding: 12px 20px;
 }
 
 .extracurricular__card {
@@ -48,6 +28,6 @@
 
 @media (max-width: 640px) {
   .extracurricular {
-    margin-top: 32px;
+    margin-top: 24px;
   }
 }

@@ -2,6 +2,7 @@ import QuickLinks from '../components/QuickLinks/QuickLinks.jsx'
 import Extracurricular from '../components/Extracurricular/Extracurricular.jsx'
 import InfoPanel from '../components/InfoPanel/InfoPanel.jsx'
 import SplitSection from '../components/SplitSection/SplitSection.jsx'
+import GoogleMap from '../components/GoogleMap/GoogleMap.jsx'
 import './Home.css'
 
 export default function Home() {
@@ -51,6 +52,12 @@ export default function Home() {
         </p>
       </SplitSection>
       <Extracurricular />
+      <GoogleMap
+        location="Asrama Tahfidz Qur'an SAHAL (Sahabat Al Quran), Jl. Babakan Sari No.11, Pasir Biru, Cibiru, Bandung"
+        title="Lokasi Asrama Tahfidz Qur'an SAHAL"
+        radius={16}
+        className="home__map"
+      />
     </>
   )
 }

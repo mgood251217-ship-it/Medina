@@ -1,9 +1,11 @@
-.home__about {
+.home__about,
+.home__history {
   margin-top: 64px;
 }
 
 @media (max-width: 640px) {
-  .home__about {
+  .home__about,
+  .home__history {
     margin-top: 32px;
   }
 }

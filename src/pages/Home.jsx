@@ -1,6 +1,7 @@
 import QuickLinks from '../components/QuickLinks/QuickLinks.jsx'
 import Extracurricular from '../components/Extracurricular/Extracurricular.jsx'
 import InfoPanel from '../components/InfoPanel/InfoPanel.jsx'
+import SplitSection from '../components/SplitSection/SplitSection.jsx'
 import './Home.css'
 
 export default function Home() {
@@ -26,6 +27,29 @@ export default function Home() {
           (pengulangan hafalan) agar hafalan tetap terjaga dengan baik.
         </p>
       </InfoPanel>
+      <SplitSection
+        title="Sejarah Singkat"
+        subtitle="Medina Insan Qurani"
+        imagePosition="right"
+        imageAlt="Sejarah PP Medina Insan Qurani"
+        imageWidth="45%"
+        imageShadow
+        className="home__history"
+        titleProps={{ size: 'lg', subtitleSize: 'md', color: 'var(--text)' }}
+        contentStyle={{ color: 'var(--info)' }}
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
+          ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
+          duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus
+          fringilla lacus nec metus bibendum egestas.
+        </p>
+        <p>
+          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit
+          semper vel class aptent taciti sociosqu. Ad litora torquent per conubia
+          nostra inceptos himenaeos.
+        </p>
+      </SplitSection>
       <Extracurricular />
     </>
   )

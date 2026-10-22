@@ -1,6 +1,7 @@
 .home__about,
 .home__history,
 .home__news,
+.home__quote,
 .home__map {
   margin-top: 64px;
 }
@@ -9,6 +10,7 @@
   .home__about,
   .home__history,
   .home__news,
+  .home__quote,
   .home__map {
     margin-top: 32px;
   }

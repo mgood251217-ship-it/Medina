@@ -6,6 +6,7 @@ import GoogleMap from '../components/GoogleMap/GoogleMap.jsx'
 import LatestNews from '../components/LatestNews/LatestNews.jsx'
 import Hero from '../components/Hero/Hero.jsx'
 import Title from '../components/Title/Title.jsx'
+import Quote from '../components/Quote/Quote.jsx'
 import './Home.css'
 
 export default function Home() {
@@ -59,6 +60,14 @@ export default function Home() {
         </SplitSection>
         <Extracurricular />
         <LatestNews className="home__news" />
+        <Quote
+          text="Setiap guru adalah teladan, setiap ilmu adalah amanah, dan setiap anak adalah investasi akhirat."
+          author="Tim Medina Insan Qur’ani"
+          background="var(--secondary)"
+          color="var(--on-secondary)"
+          accentColor="var(--primary-active)"
+          className="home__quote"
+        />
         <GoogleMap
           location="Asrama Tahfidz Qur'an SAHAL (Sahabat Al Quran), Jl. Babakan Sari No.11, Pasir Biru, Cibiru, Bandung"
           title="Lokasi Asrama Tahfidz Qur'an SAHAL"

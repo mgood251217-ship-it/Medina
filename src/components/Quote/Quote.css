@@ -1,0 +1,35 @@
+.quote {
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 52px 40px 40px;
+  border-left: 6px solid var(--quote-accent);
+  border-radius: 18px;
+}
+
+.quote__body {
+  margin: 0;
+}
+
+.quote__text {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.quote__author {
+  margin-top: 16px;
+  color: var(--quote-accent);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .quote {
+    padding: 32px 20px;
+    border-left-width: 4px;
+  }
+}

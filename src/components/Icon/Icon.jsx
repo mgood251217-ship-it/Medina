@@ -1,6 +1,21 @@
 import './Icon.css'
 
 const icons = {
+  users: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 1.8,
+    content: (
+      <>
+        <circle cx="9" cy="8" r="3" />
+        <path d="M3 21v-2a6 6 0 0 1 12 0v2ZM16 5a3 3 0 0 1 0 6M18 14a5 5 0 0 1 3 5v2" />
+      </>
+    ),
+  },
+  heart: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 1.8,
+    content: <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z" />,
+  },
   shieldCheck: {
     viewBox: '0 0 24 24',
     strokeWidth: 1.8,

@@ -11,6 +11,8 @@ import SectionBackground from '../components/SectionBackground/SectionBackground
 import VisionMission from '../components/VisionMission/VisionMission.jsx'
 import FAQ from '../components/FAQ/FAQ.jsx'
 import CoreValues from '../components/CoreValues/CoreValues.jsx'
+import TeamSection from '../components/TeamSection/TeamSection.jsx'
+import { tahfidzTeam } from '../data/team.js'
 import { coreValues } from '../data/coreValues.js'
 import { faqItems } from '../data/faq.js'
 import './Home.css'
@@ -69,6 +71,9 @@ export default function Home() {
         <VisionMission className="home__vision-mission" />
         <SectionBackground variant="rings" className="home__values">
           <CoreValues items={coreValues} />
+        </SectionBackground>
+        <SectionBackground variant="blobs" mirror className="home__team">
+          <TeamSection items={tahfidzTeam} />
         </SectionBackground>
         <Extracurricular />
         <LatestNews className="home__news" />

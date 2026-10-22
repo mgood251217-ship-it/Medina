@@ -1,13 +1,11 @@
 export const visionMission = {
-  vision: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.',
+  vision: 'Mencetak generasi penghafal Al-Quran yang mutqin, berakhlakul karimah, yang berorientasi akhirat dan cinta berkhidmah untuk ummah. Hafal Al-Quran 30 juz sekali duduk paham beserta maknanya dan bisa tes acak.',
   missions: [
-    'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
-    'Quisque faucibus ex sapien vitae pellentesque sem placerat.',
-    'In id cursus mi pretium tellus duis convallis.',
-    'Tempus leo eu aenean sed diam urna tempor.',
-    'Pulvinar vivamus fringilla lacus nec metus bibendum egestas.',
-    'Iaculis massa nisl malesuada lacinia integer nunc posuere.',
-    'Ut hendrerit semper vel class aptent taciti sociosqu.',
-    'Ad litora torquent per conubia nostra inceptos himenaeos.',
+    'Membangun karakter para santri untuk senantiasa mencintai, memahami dan mengamalkan Al-Quran.',
+    'Meningkatkan kuantitas dan kualitas hafalan Al-Quran dengan mengadakan program hafalan yang terstruktur dan terukur.',
+    'Menanamkan pendidikan aqidah yang lurus dan kuat.',
+    'Menanamkan pendidikan Akhlakul Karimah dan mengutamakan adab sebelum ilmu pada setiap santri.',
+    'Menanamkan pendidikan ibadah sesuai Sunnah',
+    'Menyediakan program pengabdian.'
   ],
 }

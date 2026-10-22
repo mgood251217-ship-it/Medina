@@ -1,6 +1,26 @@
 import './Icon.css'
 
 const icons = {
+  shieldCheck: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 1.8,
+    content: (
+      <>
+        <path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6Z" />
+        <path d="m8 12 3 3 5-6" />
+      </>
+    ),
+  },
+  briefcase: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 1.8,
+    content: (
+      <>
+        <rect x="3" y="7" width="18" height="14" rx="2" />
+        <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12a20 20 0 0 0 18 0M12 12v3" />
+      </>
+    ),
+  },
   plus: {
     viewBox: '0 0 24 24',
     strokeWidth: 2,

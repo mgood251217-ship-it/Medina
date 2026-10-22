@@ -1,0 +1,12 @@
+.core-values {
+  min-width: 0;
+}
+
+.core-values__heading {
+  margin-bottom: 32px;
+}
+
+.core-values__cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}

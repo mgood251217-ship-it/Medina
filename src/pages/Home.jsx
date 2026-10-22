@@ -10,6 +10,8 @@ import Quote from '../components/Quote/Quote.jsx'
 import SectionBackground from '../components/SectionBackground/SectionBackground.jsx'
 import VisionMission from '../components/VisionMission/VisionMission.jsx'
 import FAQ from '../components/FAQ/FAQ.jsx'
+import CoreValues from '../components/CoreValues/CoreValues.jsx'
+import { coreValues } from '../data/coreValues.js'
 import { faqItems } from '../data/faq.js'
 import './Home.css'
 
@@ -65,6 +67,9 @@ export default function Home() {
           </SplitSection>
         </SectionBackground>
         <VisionMission className="home__vision-mission" />
+        <SectionBackground variant="rings" className="home__values">
+          <CoreValues items={coreValues} />
+        </SectionBackground>
         <Extracurricular />
         <LatestNews className="home__news" />
         <SectionBackground variant="waves" className="home__faq">

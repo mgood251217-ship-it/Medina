@@ -8,6 +8,7 @@ import Hero from '../components/Hero/Hero.jsx'
 import Title from '../components/Title/Title.jsx'
 import Quote from '../components/Quote/Quote.jsx'
 import SectionBackground from '../components/SectionBackground/SectionBackground.jsx'
+import VisionMission from '../components/VisionMission/VisionMission.jsx'
 import './Home.css'
 
 export default function Home() {
@@ -61,6 +62,7 @@ export default function Home() {
             </p>
           </SplitSection>
         </SectionBackground>
+        <VisionMission className="home__vision-mission" />
         <Extracurricular />
         <LatestNews className="home__news" />
         <SectionBackground variant="dots" className="home__quote">

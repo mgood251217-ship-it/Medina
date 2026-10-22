@@ -1,5 +1,6 @@
 .home__about,
 .home__history,
+.home__vision-mission,
 .home__news,
 .home__quote,
 .home__map {
@@ -9,6 +10,7 @@
 @media (max-width: 640px) {
   .home__about,
   .home__history,
+  .home__vision-mission,
   .home__news,
   .home__quote,
   .home__map {

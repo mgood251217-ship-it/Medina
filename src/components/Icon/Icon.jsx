@@ -1,6 +1,11 @@
 import './Icon.css'
 
 const icons = {
+  check: {
+    viewBox: '0 0 24 24',
+    strokeWidth: 2.5,
+    content: <path d="m5 12 4 4L19 6" />,
+  },
   arrowLeft: {
     viewBox: '0 0 24 24',
     strokeWidth: 2.5,

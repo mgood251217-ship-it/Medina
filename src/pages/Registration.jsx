@@ -2,7 +2,7 @@ import RegistrationForm from '../components/RegistrationForm/RegistrationForm.js
 import SplitSection from '../components/SplitSection/SplitSection.jsx'
 import './Registration.css'
 
-export default function Registration() {
+export default function Registration({ onRegister }) {
   return (
     <SplitSection
       className="registration-page"
@@ -22,7 +22,12 @@ export default function Registration() {
         imageStyle: { objectPosition: 'center top' },
       }}
     >
-      <RegistrationForm />
+      <RegistrationForm
+        onSubmit={onRegister}
+        submitLabel="Simpan Pendaftaran Demo"
+        notice="Mode demo. Data disimpan sementara untuk ditampilkan di panel admin dan akan hilang saat halaman dimuat ulang."
+        successMessage="Pendaftaran demo tersimpan dan sudah tersedia di panel admin. Data akan hilang saat halaman dimuat ulang."
+      />
     </SplitSection>
   )
 }

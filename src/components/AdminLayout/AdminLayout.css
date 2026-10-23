@@ -1,0 +1,123 @@
+.admin-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  min-height: 100dvh;
+  background-color: var(--background-hover);
+}
+
+.admin-layout__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 28px 20px;
+  border-right: 1px solid var(--border);
+  background-color: var(--content);
+}
+
+.admin-layout__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--primary-active);
+}
+
+.admin-layout__brand span {
+  display: block;
+  margin-top: 6px;
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.admin-layout__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-layout__navigation a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.admin-layout__navigation a:hover {
+  background-color: var(--content-hover);
+  color: var(--primary-hover);
+}
+
+.admin-layout__navigation a[aria-current='page'] {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+}
+
+.admin-layout__navigation a:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.admin-layout__sidebar-bottom {
+  display: grid;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.admin-layout__main {
+  min-width: 0;
+}
+
+.admin-layout__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 32px;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--content);
+  font-size: var(--font-size-sm);
+}
+
+.admin-layout__demo {
+  color: var(--on-secondary);
+}
+
+.admin-layout__user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+}
+
+.admin-layout__content {
+  padding: clamp(20px, 3vw, 36px);
+}
+
+@media (max-width: 760px) {
+  .admin-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .admin-layout__sidebar {
+    gap: 20px;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .admin-layout__navigation,
+  .admin-layout__sidebar-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .admin-layout__header {
+    padding: 20px;
+  }
+}

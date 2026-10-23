@@ -32,6 +32,8 @@ export default function RegistrationForm({
   description = 'Silakan lengkapi formulir pendaftaran di bawah ini dengan data yang benar. Informasi ini diperlukan untuk proses seleksi dan administrasi calon santri.',
   programOptions = registrationPrograms,
   onSubmit,
+  notice,
+  successMessage = 'Pendaftaran berhasil dikirim.',
   submitLabel = onSubmit ? 'Kirim Pendaftaran' : 'Periksa Data Pendaftaran',
   className = '',
   ...props
@@ -72,7 +74,7 @@ export default function RegistrationForm({
     setStatus(null)
     try {
       await onSubmit({ ...values, phone: values.phone.replace(/[\s()-]/g, '') })
-      setStatus({ type: 'success', message: 'Pendaftaran berhasil dikirim.' })
+      setStatus({ type: 'success', message: successMessage })
     } catch {
       setStatus({ type: 'error', message: 'Pendaftaran belum berhasil dikirim. Silakan coba lagi.' })
     } finally {
@@ -108,7 +110,7 @@ export default function RegistrationForm({
         />
       </div>
       <p className="registration-form__note">
-        Semua kolom wajib diisi.{!onSubmit && ' Formulir sementara; data belum dikirim atau disimpan.'}
+        Semua kolom wajib diisi. {notice ?? (!onSubmit ? 'Formulir sementara; data belum dikirim atau disimpan.' : '')}
       </p>
       <fieldset className="registration-form__fields" disabled={submitting}>
         <legend className="registration-form__legend">Data calon santri dan orang tua</legend>

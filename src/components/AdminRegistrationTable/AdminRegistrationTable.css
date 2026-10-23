@@ -1,0 +1,35 @@
+.registration-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background-color: var(--background-active);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.registration-status--new {
+  color: var(--info);
+}
+
+.registration-status--review {
+  color: var(--orange);
+}
+
+.registration-status--accepted {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+}
+.admin-registration-table {
+  min-width: 0;
+}
+
+.admin-registration-table table {
+  min-width: 1600px;
+}
+
+.admin-registration-table td {
+  max-width: 280px;
+  overflow-wrap: anywhere;
+}
+

@@ -24,10 +24,15 @@ body {
 }
 
 .page-content--home,
+.page-content--admin,
 .page-content--registration {
   width: 100%;
   max-width: none;
   padding: 0;
+}
+
+.page-content--admin {
+  min-height: 100dvh;
 }
 
 .page-content--registration {

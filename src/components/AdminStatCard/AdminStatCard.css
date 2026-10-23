@@ -1,0 +1,19 @@
+.admin-stat-card {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background-color: var(--content);
+  overflow-wrap: anywhere;
+}
+
+.admin-stat-card__icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background-color: var(--secondary);
+}

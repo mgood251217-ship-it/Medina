@@ -73,8 +73,9 @@
   --footer-text: #fff;
   --footer-accent: #ff8a00;
 
-  --hero-background: #1c0ad9;
-  --hero-text: #fff;
+  --hero-background: linear-gradient(135deg, var(--secondary), var(--background) 55%, var(--section-decoration));
+  --hero-text: var(--primary-active);
+  --hero-decoration: var(--secondary-active);
 
   --statistics-background: linear-gradient(110deg, var(--primary-active), var(--primary), var(--cyan));
   --statistics-text: var(--on-primary);

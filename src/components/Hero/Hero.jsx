@@ -1,5 +1,6 @@
 import { useId } from 'react'
 import ProgramCarousel from '../ProgramCarousel/ProgramCarousel.jsx'
+import SectionBackground from '../SectionBackground/SectionBackground.jsx'
 import Title from '../Title/Title.jsx'
 import './Hero.css'
 
@@ -9,6 +10,7 @@ export default function Hero({
   background = 'var(--hero-background)',
   color = 'var(--hero-text)',
   carouselVariant = 'center',
+  backgroundProps = {},
   titleProps = {},
   programProps = {},
   className = '',
@@ -18,10 +20,15 @@ export default function Hero({
   const titleId = useId()
 
   return (
-    <section
+    <SectionBackground
+      as="section"
+      variant="rings"
+      color="var(--hero-decoration)"
+      padding="clamp(40px, 5vw, 72px) clamp(16px, 3vw, 32px)"
+      {...backgroundProps}
       className={`hero ${className}`.trim()}
       aria-labelledby={titleId}
-      style={{ backgroundColor: background, color, ...style }}
+      style={{ background, color, ...style }}
       {...props}
     >
       <div className="hero__container">
@@ -41,6 +48,6 @@ export default function Hero({
         </div>
         <ProgramCarousel {...programProps} variant={carouselVariant} />
       </div>
-    </section>
+    </SectionBackground>
   )
 }

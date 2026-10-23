@@ -1,22 +1,13 @@
-.hero {
-  padding: 36px 24px 28px;
-}
-
 .hero__container {
   max-width: 1200px;
   margin-inline: auto;
 }
 
 .hero__heading {
-  margin-bottom: 24px;
+  max-width: 960px;
+  margin: 0 auto clamp(28px, 4vw, 44px);
 }
 
 .hero .carousel {
-  --carousel-dot-color: var(--hero-text);
-}
-
-@media (max-width: 600px) {
-  .hero {
-    padding-inline: 16px;
-  }
+  --carousel-dot-color: currentColor;
 }

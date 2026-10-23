@@ -1,4 +1,6 @@
 import { useId } from 'react'
+import Input from '../Input/Input.jsx'
+import Select from '../Select/Select.jsx'
 import './FormField.css'
 
 export default function FormField({
@@ -8,6 +10,7 @@ export default function FormField({
   hint,
   error,
   required = false,
+  children,
   options = [],
   optionPlaceholder = 'Pilih salah satu',
   className = '',
@@ -35,18 +38,11 @@ export default function FormField({
         {label}
         {required && <span className="form-field__required" aria-hidden="true"> *</span>}
       </label>
-      {Component === 'select' ? (
-        <select {...controlProps}>
-          <option value="" disabled>{optionPlaceholder}</option>
-          {options.map((option) => (
-            <option key={option.value} value={option.value} disabled={option.disabled}>
-              {option.label}
-            </option>
-          ))}
-        </select>
+      {typeof children === 'function' ? children(controlProps) : children ?? (Component === 'select' ? (
+        <Select {...controlProps} options={options} placeholder={optionPlaceholder} />
       ) : (
-        <Component {...controlProps} />
-      )}
+        <Input {...controlProps} as={Component} />
+      ))}
       {hint && <p id={`${fieldId}-hint`} className="form-field__hint">{hint}</p>}
       {error && <p id={`${fieldId}-error`} className="form-field__error">{error}</p>}
     </div>

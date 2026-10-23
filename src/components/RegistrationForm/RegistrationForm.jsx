@@ -1,6 +1,8 @@
 import { useId, useState } from 'react'
 import Button from '../Button/Button.jsx'
 import FormField from '../FormField/FormField.jsx'
+import Input from '../Input/Input.jsx'
+import Select from '../Select/Select.jsx'
 import Title from '../Title/Title.jsx'
 import { registrationFields, registrationPrograms } from '../../data/registration.js'
 import './RegistrationForm.css'
@@ -110,15 +112,24 @@ export default function RegistrationForm({
       </p>
       <fieldset className="registration-form__fields" disabled={submitting}>
         <legend className="registration-form__legend">Data calon santri dan orang tua</legend>
-        {registrationFields.map((field) => (
+        {registrationFields.map(({ as = 'input', optionPlaceholder, label, ...field }) => (
           <FormField
             key={field.name}
-            {...field}
+            label={label}
             required
-            defaultValue=""
-            options={field.as === 'select' ? programOptions : undefined}
             error={errors[field.name]}
-          />
+          >
+            {(controlProps) => as === 'select' ? (
+              <Select
+                {...field}
+                {...controlProps}
+                options={programOptions}
+                placeholder={optionPlaceholder}
+              />
+            ) : (
+              <Input {...field} {...controlProps} as={as} defaultValue="" />
+            )}
+          </FormField>
         ))}
       </fieldset>
       <div className="registration-form__status" aria-live="polite" aria-atomic="true">

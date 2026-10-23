@@ -1,0 +1,9 @@
+.input::placeholder {
+  color: var(--text-muted);
+  opacity: 1;
+}
+
+textarea.input {
+  min-height: 100px;
+  resize: vertical;
+}

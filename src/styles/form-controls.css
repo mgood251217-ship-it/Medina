@@ -1,0 +1,41 @@
+.form-control {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background-color: var(--content);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.form-control:hover:not(:disabled) {
+  border-color: var(--border-hover);
+}
+
+.form-control:focus-visible {
+  border-color: var(--primary);
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.form-control[aria-invalid='true'] {
+  border-color: var(--danger);
+}
+
+.form-control:disabled {
+  background-color: var(--content-active);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-control {
+    transition: none;
+  }
+}

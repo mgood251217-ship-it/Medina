@@ -9,6 +9,7 @@
 
 .navbar__spacer {
   height: 89px;
+  flex-shrink: 0;
 }
 
 .navbar__container {

@@ -5,7 +5,7 @@ const quickLinks = [
   { to: '/ppdb', label: 'PPDB', icon: 'book' },
   { to: '/gallery', label: 'Image Gallery', icon: 'gallery' },
   { to: '/daily-activities', label: 'Kegiatan', icon: 'activities' },
-  { to: '/ppdb', label: 'Daftar', icon: 'register' },
+  { to: '/pendaftaran', label: 'Daftar', icon: 'register' },
 ]
 
 export default function QuickLinks() {

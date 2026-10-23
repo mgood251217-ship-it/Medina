@@ -1,0 +1,71 @@
+.registration-form {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: clamp(24px, 3vw, 40px);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background-color: var(--content);
+  box-shadow: 0 16px 44px color-mix(in srgb, var(--text) 10%, transparent);
+}
+
+.registration-form__heading .title__subtitle {
+  margin-top: 14px;
+  line-height: 1.8;
+}
+
+.registration-form__note {
+  margin: 16px 0 24px;
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+}
+
+.registration-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.registration-form__legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.registration-form__message {
+  margin: 20px 0 0;
+  padding: 12px 16px;
+  border: 1px solid currentColor;
+  border-radius: 10px;
+  color: var(--info);
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.registration-form__message--error {
+  color: var(--danger);
+}
+
+.registration-form__message--success {
+  color: var(--success);
+}
+
+.registration-form__submit {
+  width: 100%;
+  margin-top: 24px;
+  border-radius: 999px;
+  white-space: normal;
+}
+
+.registration-form__submit:disabled {
+  background-color: var(--primary-active);
+  cursor: wait;
+}

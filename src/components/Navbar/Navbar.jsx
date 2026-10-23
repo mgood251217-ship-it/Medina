@@ -15,7 +15,9 @@ export default function Navbar() {
     const spacer = spacerRef.current
 
     const updateSpacer = () => {
-      spacer.style.height = `${navbar.getBoundingClientRect().height}px`
+      const height = `${navbar.getBoundingClientRect().height}px`
+      spacer.style.height = height
+      document.documentElement.style.setProperty('--navbar-height', height)
     }
 
     updateSpacer()
@@ -57,7 +59,7 @@ export default function Navbar() {
             </ul>
           </nav>
 
-          <Button to="/ppdb" variant="primary" className="navbar__register">
+          <Button to="/pendaftaran" variant="primary" className="navbar__register">
             Daftar Sekarang
           </Button>
         </div>

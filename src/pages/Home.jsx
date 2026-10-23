@@ -12,6 +12,8 @@ import VisionMission from '../components/VisionMission/VisionMission.jsx'
 import FAQ from '../components/FAQ/FAQ.jsx'
 import CoreValues from '../components/CoreValues/CoreValues.jsx'
 import TeamSection from '../components/TeamSection/TeamSection.jsx'
+import Statistics from '../components/Statistics/Statistics.jsx'
+import { statistics } from '../data/statistics.js'
 import { tahfidzTeam } from '../data/team.js'
 import { coreValues } from '../data/coreValues.js'
 import { faqItems } from '../data/faq.js'
@@ -75,6 +77,7 @@ export default function Home() {
         <SectionBackground variant="blobs" mirror className="home__team">
           <TeamSection items={tahfidzTeam} />
         </SectionBackground>
+        <Statistics items={statistics} className="home__statistics" />
         <Extracurricular />
         <LatestNews className="home__news" />
         <SectionBackground variant="waves" className="home__faq">

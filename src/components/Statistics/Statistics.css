@@ -1,0 +1,28 @@
+.statistics {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 44px 24px;
+}
+
+.statistics__grid {
+  max-width: 1100px;
+  margin-inline: auto;
+  align-items: center;
+}
+
+.statistics__item {
+  min-width: 0;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.statistics__item .title {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 640px) {
+  .statistics {
+    padding: 32px 20px;
+  }
+}

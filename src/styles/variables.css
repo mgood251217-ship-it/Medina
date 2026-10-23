@@ -76,6 +76,9 @@
   --hero-background: #1c0ad9;
   --hero-text: #fff;
 
+  --statistics-background: linear-gradient(110deg, var(--primary-active), var(--primary), var(--cyan));
+  --statistics-text: var(--on-primary);
+
   --font-size-sm: 14px;
   --font-size-md: 16px;
   --font-size-lg: 18px;
